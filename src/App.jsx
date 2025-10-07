@@ -15,7 +15,7 @@ const API = "https://cart-backend-xea4.onrender.com";
 
 //   useEffect(() => {
 //     const fetchProducts = async () => {
-//       const res = await axios.get("http://localhost:4000/products");
+//       const res = await axios.get(`${API}/products`);
 //       setProducts(res.data);
 //     };
 //     fetchProducts();
@@ -23,7 +23,7 @@ const API = "https://cart-backend-xea4.onrender.com";
 //   }, []);
 
 //   const addToCart = async (productId) => {
-//     await axios.post("http://localhost:4000/cart/add", {
+//     await axios.post(`${API}/cart/add`, {
 //       userId,
 //       productId,
 //       quantity: 1,
@@ -32,7 +32,7 @@ const API = "https://cart-backend-xea4.onrender.com";
 //   };
 
 //   const fetchCartTotal = async () => {
-//     const res = await axios.get("http://localhost:4000/cart/total", {
+//     const res = await axios.get(`${API}/cart/total`, {
 //       headers: { userId },
 //     });
 //     setCart(res.data);
